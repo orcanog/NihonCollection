@@ -16,6 +16,6 @@ Un set d'icônes (FontAwesome, Bootstrap Icons...)
 
 
 #### Couleurs : 
-<img src="image/couleurs.png" alt= “Couleurs” width="210" height="70">
+<img src="image/couleurs.png" alt= “Couleurs” width="250" height="100">
 
 
