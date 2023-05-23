@@ -12,5 +12,10 @@ Un set d'icônes (FontAwesome, Bootstrap Icons...)
 
 #### Logo : 
 
-<img src="image/IMG_5881.png" alt= “LOGO” width="200" height="200">
+<img src="image/logo.png" alt= “Logo” width="200" height="200">
+
+
+#### Couleurs : 
+<img src="image/couleurs.png" alt= “Couleurs” width="200" height="200">
+
 
