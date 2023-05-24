@@ -17,10 +17,10 @@ Objectif : Proposer aux utilisateurs la possibilté de créer une collection de 
 
 ### DELAIS
 - Cahier des charges : 09/05/2023
-- Planning du projet : 09/05/2023
-- Charte graphique : 09/05/2023
-- Modelisation des données : 
-- Développement : juillet 2023
+- Planning du projet : 24/05/2023
+- Charte graphique : 24/05/2023
+- Modelisation des données : 24/05/2023
+- Développement : 
 - Documentation utilisateur : 
 
 ### Spécifications techniques

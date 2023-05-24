@@ -13,11 +13,11 @@
 <img src="image/image_transparente_blanche.png" alt= “Logo” width="250" height="200">
 
 #### Palette de couleurs 
-- Principales :  
-- Secondaires :  
+- Principales :  rose pale, gris clair
+- Secondaires :  violet, noir
 
 #### Polices de textes
-Police de titres et police de texte :   
+Police de titres et police de texte : Callibri
 Police de nom de personnages : 
 
 #### Un set d'icônes (FontAwesome, Bootstrap Icons...)  
