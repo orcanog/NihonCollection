@@ -23,6 +23,7 @@ Police de titres et police de texte : Callibri
 Police de nom de personnages : 
 
 #### Un set d'icônes (FontAwesome, Bootstrap Icons...)  
+A définir.
 
 #### Choix des éléments
 **LOGO**
