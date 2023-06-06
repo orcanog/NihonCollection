@@ -34,4 +34,4 @@ Langages utilisés : Python / Django
 - Achat du nom de domaine
 
 ### Clauses contractuelles
-- Respect RDGP
+- Respect RGPD
