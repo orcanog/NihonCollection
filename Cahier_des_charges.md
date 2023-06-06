@@ -15,6 +15,7 @@ Objectif : Proposer aux utilisateurs, sur mobile et ordinateur, la possibilté d
 * Sur la page d'accueil du site web, proposer la création d'un compte utilisateur à un visiteur, afin ensuite de pouvoir gérer une collection de personnages.
 * Chaque élément des résultats de la recherche doit pouvoir être mis en favoris par l'utilisateur, ce qui aura pour effet d'insérer toutes les données de l'élément mit en favori dans la base de données.
 * Chaque utilisateur aura une page personnelle permettant de voir ses éléments mis en favoris.
+* Proposer une page d'administration pour les admins authentifiés leur permettant de pouvoir gérer les utilisateurs.
 
 ### DELAIS
 - Cahier des charges : 09/05/2023
@@ -32,8 +33,9 @@ Langages utilisés :
 Langages choisis et utilisés dans le cadre d'un projet scolaire pour découvrir un nouveau framework.
 
 ### Sécurité
-- Mot de passe : 16 caractères, 2 caractères spéciaux 
-- Cryptage de mot de passe (pour pas les stocker en clair)
+- Mot de passe pour les utilisateurs : 16 caractères minimums dont 1 majuscule, 1 minuscule, 1 chiffre et 2 caractères spéciaux
+- Mot de passe pour les administrateurs : 18 caractères minimums dont 1 majuscule, 1 minuscule, 2 chiffre et 3 caractères spéciaux
+- Cryptage de mot de passe afin d'éviter le stockage en clair
 
 ### Estimation budgétaire
 - Achat du nom de domaine
