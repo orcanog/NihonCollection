@@ -27,11 +27,11 @@ Objectif : Proposer aux utilisateurs la possibilté de créer une collection de 
 Langages utilisés : Python / Django
 
 ### Sécurité
-- mdp : 16 caractères, 2 caractères spéciaux 
-- cryptage de mdp (pour pas les stoker en clair)
+- Mot de passe : 16 caractères, 2 caractères spéciaux 
+- Cryptage de mot de passe (pour pas les stocker en clair)
 
 ### Estimation budgétaire
-- achat du nom de domaine
+- Achat du nom de domaine
 
 ### Clauses contractuelles
-- respect RDGP
+- Respect RDGP
