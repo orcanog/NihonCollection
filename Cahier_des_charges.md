@@ -35,7 +35,7 @@ Langages choisis et utilisés dans le cadre d'un projet scolaire pour découvrir
 ### Sécurité
 - Mot de passe pour les utilisateurs : 16 caractères minimums dont 1 majuscule, 1 minuscule, 1 chiffre et 2 caractères spéciaux
 - Mot de passe pour les administrateurs : 18 caractères minimums dont 1 majuscule, 1 minuscule, 2 chiffre et 3 caractères spéciaux
-- Cryptage de mot de passe afin d'éviter le stockage en clair
+- Cryptage de mot de passe afin d'éviter le stockage en clair dans la base de données.
 
 ### Estimation budgétaire
 - Achat du nom de domaine
