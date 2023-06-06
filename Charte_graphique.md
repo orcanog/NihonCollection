@@ -13,9 +13,11 @@
 <img src="image/image_transparente_blanche.png" alt= “Logo” width="250" height="200">
 
 #### Palette de couleurs 
-- Principales :  rose pale, gris clair
-- Secondaires :  violet, noir
+Version claire su site : 
+<img src="image/couleur.png" alt= “palette” width="150" height="350">
 
+Version sombre du site :
+<img src="image/couleur.sombre.png" alt= “palete” width="150" height="350">
 #### Polices de textes
 Police de titres et police de texte : Callibri
 Police de nom de personnages : 
