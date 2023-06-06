@@ -14,10 +14,10 @@
 
 #### Palette de couleurs 
 Version claire su site : 
-<img src="image/couleur.png" alt= “palette” width="350" height="150">
+<img src="image/couleur.png" alt= “palette” width="480" height="80">
 
 Version sombre du site :
-<img src="image/couleur.sombre.png" alt= “palete” width="350" height="150">
+<img src="image/couleur.sombre.png" alt= “palete” width="480" height="80">
 #### Polices de textes
 Police de titres et police de texte : Callibri
 Police de nom de personnages : 
