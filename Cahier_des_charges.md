@@ -6,14 +6,15 @@
 ### DESCRIPTION
 Une application mobile sur la recherche de personnage d'anime à l'aide de l'API Kitsu.io
 
-Objectif : Proposer aux utilisateurs la possibilté de créer une collection de leurs personnges favoris provenant de series anime japonaise.
+Objectif : Proposer aux utilisateurs, sur mobile et ordinateur, la possibilté de créer une collection de leurs personnages favoris provenant de séries d'animation japonaise.
 
 ### FONCTIONNALITES
-* Sur la page d'accueil du site web, proposer la création d'un compte utilisateur à un visiteur, afin ensuite de pouvoir gérer une collection de personnages d'anime
-* Une fois connecté, un utilisateur peut utiliser un formulaire de recherche pour chercher des éléments à partir de l'API Kitsu.io
-* Le formulaire de recherche devra afficher les résultats venant de l'API Kitsu.io, avec la possibilité de trier et filtrer les résultats selon des critères cohérents, afin de pouvoir retrouver le manga correspondant au personnage
-* Chaque élément des résultats de la recherche doit pouvoir être mis en favoris, ce qui aura pour effet d'insérer toutes les données de l'élément choisi en base de données
-* Chaque utilisateur aura une page personnelle permettant de voir ses éléments mis en favoris, en utilisant la base de données
+* Permettre à chaque utilisateur de mettre en favoris leurs personnages préférés impliquant donc la création d'une collection de favoris.
+* Proposer aux visiteurs tous les personnages contenus dans l'API Kitsu.io et leur permettre d'utiliser le formulaire de recherche.
+* Le formulaire de recherche permettra au visiteur de rechercher un personnage à partir de son nom ou de critères cohérents d'un anime ou manga dont le type de série, la date de sortie d'un anime ou manga afin d'afficher les personnages correspondant aux critères choisis.
+* Sur la page d'accueil du site web, proposer la création d'un compte utilisateur à un visiteur, afin ensuite de pouvoir gérer une collection de personnages.
+* Chaque élément des résultats de la recherche doit pouvoir être mis en favoris par l'utilisateur, ce qui aura pour effet d'insérer toutes les données de l'élément mit en favori dans la base de données.
+* Chaque utilisateur aura une page personnelle permettant de voir ses éléments mis en favoris.
 
 ### DELAIS
 - Cahier des charges : 09/05/2023
@@ -24,7 +25,11 @@ Objectif : Proposer aux utilisateurs la possibilté de créer une collection de 
 - Documentation utilisateur : 
 
 ### Spécifications techniques
-Langages utilisés : Python / Django
+Langages utilisés : 
+- Front-end : HTML/CSS/JS
+- Back-end : Django (Python)
+
+Langages choisis et utilisés dans le cadre d'un projet scolaire pour découvrir un nouveau framework.
 
 ### Sécurité
 - Mot de passe : 16 caractères, 2 caractères spéciaux 
