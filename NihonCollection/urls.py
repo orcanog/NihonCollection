@@ -21,4 +21,9 @@ from Collection import views
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('hello/', views.hello),
+    path('accueil/', views.accueil),
+    path('connexion/', views.connexion),
+    path('favori/', views.favori),
+    path('recherche/', views.recherche)
+
 ]
