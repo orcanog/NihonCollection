@@ -1,4 +1,5 @@
 from django.views.generic import TemplateView
+from Views import favori
 
-class FavView(TemplateView):
-    template_name = "favorite.html"
+class FavoriView(TemplateView):
+    template_name = "favori.html"

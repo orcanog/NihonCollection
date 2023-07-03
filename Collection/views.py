@@ -7,13 +7,17 @@ def hello(request):
     return HttpResponse('<h1>Hello Django!</h1>')
 
 def accueil(request):
-    return render(request, 'Collection/templates/accueil.html')
+    return HttpResponse('<h1>PAGE ACCUEIL</h1>')
+    #return render(request, 'Collection/templates/accueil.html')
 
 def connexion(request):
-    return render(request, 'Collection/templates/connexion.html')
+    return HttpResponse('<h1>PAGE CONNEXION</h1>')
+    #return render(request, 'Collection/templates/connexion.html')
 
 def favori(request):
-    return render(request, 'Collection/templates/favori.html')
+    return HttpResponse('<h1>PAGE FAVORI</h1>')
+    #return render(request, 'Collection/templates/favori.html')
 
 def recherche(request):
-    return render(request, 'Collection/templates/recherche.html')
+    return HttpResponse('<h1>PAGE RECHERCHE</h1>')
+    #return render(request, 'Collection/templates/recherche.html')

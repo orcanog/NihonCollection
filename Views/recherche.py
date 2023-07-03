@@ -1,4 +1,5 @@
 from django.views.generic import TemplateView
+from Views import recherche
 
-class SeachView(TemplateView):
-    template_name = "search.html"
+class RechercheView(TemplateView):
+    template_name = "recherche.html"
