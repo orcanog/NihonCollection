@@ -17,13 +17,6 @@ Objectif : Proposer aux utilisateurs, sur mobile et ordinateur, la possibilté d
 * Chaque utilisateur aura une page personnelle permettant de voir ses éléments mis en favoris.
 * Proposer une page d'administration pour les admins authentifiés leur permettant de pouvoir gérer les utilisateurs.
 
-### DELAIS
-- Cahier des charges : 09/05/2023
-- Planning du projet : 24/05/2023
-- Charte graphique : 24/05/2023
-- Modelisation des données : 24/05/2023
-- Développement : 
-- Documentation utilisateur : 
 
 ### Spécifications techniques
 Langages utilisés : 
