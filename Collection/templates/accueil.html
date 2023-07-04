@@ -24,10 +24,21 @@
         </div>
         <div class="profile" id="profile">
             <img src=logo_noir_blanc.png alt="Photo de profil">
-            <span>Nom d'utilisateur</span>
+            {% block content %}
+            {% if user.is_authenticated %}
+            {{ user.username }}
+            {% else %}
+            <p>You are not logged in</p>
+            {% endif %}
         </div>
         <div class="profile-menu" id="profileMenu">
             <ul>
+                {% if user.is_authenticated %}
+                <li><a href="{% url 'logout' %}">Log Out</a></li>
+                {% else %}
+                <li><a href="{% url 'login' %}">Log In</a></li>
+                {% endif %}
+                {% endblock %}
                 <li><a href="#">Favoris</a></li>
                 <li><a href="#">Paramètres</a></li>
                 <li><a href="#">Informations du profil</a></li>
@@ -38,16 +49,7 @@
 </header>
 
 
-{% block title %}Home{% endblock %}
-{% block content %}
-{% if user.is_authenticated %}
-  Hi {{ user.username }}!
-  <p><a href="{% url 'logout' %}">Log Out</a></p>
-{% else %}
-  <p>You are not logged in</p>
-  <a href="{% url 'login' %}">Log In</a>
-{% endif %}
-{% endblock %}
+
 
 <main>
     <h2>Bienvenue dans le monde des anime et manga</h2>
