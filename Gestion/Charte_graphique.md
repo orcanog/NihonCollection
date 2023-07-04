@@ -4,20 +4,21 @@
 #### version 1.0 le 24/05/2023
 
 #### Logo "couleur" au format SVG ou au format PNG sur fond transparent  
-<img src="image/logo.png" alt= “Logo” width="250" height="200">
+<img src="Collection/static/image/logo.png" alt= “Logo” width="250" height="200">
 
 #### Logo "noir" au format SVG ou au format PNG sur fond transparent  
-<img src="image/image_transparente_noir.png" alt= “Logo” width="250" height="200">
+<img src="Collection/static/image/image_transparente_noir.png" alt= “Logo” width="250" height="200">
 
 #### Logo "blanc" au format SVG ou au format PNG sur fond transparent  
-<img src="image/image_transparente_blanche.png" alt= “Logo” width="250" height="200">
+<img src="Collection/static/image/image_transparente_blanche.png" alt= “Logo” width="250" height="200">
 
 #### Palette de couleurs 
 Version claire su site : 
-<img src="image/couleur.png" alt= “palette” width="480" height="80">
+<img src="Gestion/couleur.png" alt= “palette” width="480" height="80">
 
 Version sombre du site :
-<img src="image/couleur.sombre.png" alt= “palete” width="480" height="80">
+<img src="Gestion/couleur.sombre.png" alt= “palete” width="480" height="80">
+
 #### Polices de textes
 Police de titres et police de texte : Callibri
 Police de nom de personnages : 
