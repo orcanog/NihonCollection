@@ -125,4 +125,6 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 # Redigirer les utilisateurs sur la page d'accueil après l'authentification
 
-LOGIN_REDIRECT_URL = "/"
+LOGIN_REDIRECT_URL = "accueil"
+
+LOGOUT_REDIRECT_URL = "accueil"

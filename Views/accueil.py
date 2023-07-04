@@ -1,11 +1,5 @@
 import requests
-from django.views.generic import TemplateView
-
-
-class HomeView(TemplateView):
-    template_name = "accueil.html"
-
-
+from django.shortcuts import render
 
 def extract_info_anime(json_data):
     extracted_data = []
@@ -14,11 +8,13 @@ def extract_info_anime(json_data):
             slug = anime_data['attributes']['slug']
             anime_type = anime_data['type']
             id = anime_data['id']
-        
+            img = anime_data['attributes']['posterImage']['tiny']
+
             extracted_data.append({
                 'slug': slug,
                 'type': anime_type,
-                'id': id
+                'id': id,
+                'img': img
             })
     return extracted_data
 
@@ -40,6 +36,3 @@ def MyView(request):
     else:
         error_message = "Une erreur s'est produite lors de la requête. Code d'erreur : " + str(response.status_code)
         return render(request, 'error.html', {'error_message': error_message})
-
-
-from django.shortcuts import render

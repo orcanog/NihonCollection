@@ -12,7 +12,8 @@
 <header>
     <nav>
         <ul class="menu">
-            <li><a href="#"><img src=logo_noir_blanc.png alt="Logo du site" class="logo-img"></a></li>
+            <!--<li><img src="{% static 'image/logo.png' %}"/>-->
+            </li>
             <li><a href="#">Actualités</a></li>
             <li><a href="#">Personnages</a></li>
             <li><a href="#">Anime</a></li>
@@ -36,6 +37,18 @@
     <h1>Mon Projet Django</h1>
 </header>
 
+
+{% block title %}Home{% endblock %}
+{% block content %}
+{% if user.is_authenticated %}
+  Hi {{ user.username }}!
+  <p><a href="{% url 'logout' %}">Log Out</a></p>
+{% else %}
+  <p>You are not logged in</p>
+  <a href="{% url 'login' %}">Log In</a>
+{% endif %}
+{% endblock %}
+
 <main>
     <h2>Bienvenue dans le monde des anime et manga</h2>
     <p class="description">Découvrez les dernières actualités, les meilleures séries, et plus encore !</p>
@@ -47,6 +60,7 @@
               <li>Slug: {{ item.slug }}</li>
               <li>Type: {{ item.type }}</li>
               <li>Id: {{ item.id }}</li>
+              <li><img src="{{ item.img }}" alt="Image"></li>
               <li>--------------</li>
             {% endfor %}
           </ul>
