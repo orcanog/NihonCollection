@@ -17,11 +17,5 @@ def favori(request):
     return render(request, 'Collection/templates/favori.html')
 
 def recherche(request):
-<<<<<<< HEAD
     return HttpResponse('<h1>PAGE RECHERCHE</h1>')
     #return render(request, 'Collection/templates/recherche.html')
-
-
-=======
-    return render(request, 'Collection/templates/recherche.html')
->>>>>>> 9330bc9e47ba77bfaa72af1acd626bc53a0d6ddd
