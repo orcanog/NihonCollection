@@ -20,7 +20,6 @@ from Collection import views
 from Views import ConnexionView, FavoriView, RechercheView, MyView
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('hello/', views.hello),
     path('', MyView, name="accueil"),
     path('connexion/', ConnexionView.as_view(), name="connexion"),
     path('favori/', FavoriView.as_view(), name="favori"),
