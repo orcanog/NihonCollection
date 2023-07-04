@@ -21,10 +21,10 @@ from Views import HomeView, ConnexionView, FavoriView, RechercheView, MyView
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('hello/', views.hello),
-    path('accueil/', HomeView.as_view(), name="accueil"),
+    path('accueil/', MyView, name="accueil"),
     path('connexion/', ConnexionView.as_view(), name="connexion"),
     path('favori/', FavoriView.as_view(), name="favori"),
     path('recherche/', RechercheView.as_view(), name="recherche"),
     path("accounts/", include("django.contrib.auth.urls")),
-    path('test/', MyView, name="recherche")
+   
 ]
