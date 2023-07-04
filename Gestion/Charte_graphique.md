@@ -14,7 +14,7 @@
 
 #### Palette de couleurs 
 Version claire su site : 
-<img src="Gestion/image/couleur.png" alt= “palette” width="480" height="80">
+<img src="Gestion/couleur.png" alt= “palette” width="480" height="80">
 
 Version sombre du site :
 <img src="Gestion/couleur.sombre.png" alt= “palete” width="480" height="80">
