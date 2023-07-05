@@ -28,15 +28,15 @@
             {% if user.is_authenticated %}
             {{ user.username }}
             {% else %}
-            <p>You are not logged in</p>
+            <p>Vous n'êtes pas connecté</p>
             {% endif %}
         </div>
         <div class="profile-menu" id="profileMenu">
             <ul>
                 {% if user.is_authenticated %}
-                <li><a href="{% url 'logout' %}">Log Out</a></li>
+                <li><a href="{% url 'logout' %}">Déconnexion</a></li>
                 {% else %}
-                <li><a href="{% url 'login' %}">Log In</a></li>
+                <li><a href="{% url 'login' %}">Connexion</a></li>
                 {% endif %}
                 {% endblock %}
                 <li><a href="#">Favoris</a></li>
