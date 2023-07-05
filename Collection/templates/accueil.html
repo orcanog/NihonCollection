@@ -57,15 +57,17 @@
     <a href="#" class="cta-button">Commencer</a>
     <section class="api-data">
         <h3>Données de l'API</h3>
-        <ul>
+        <div class="image-container">
             {% for item in extracted_data %}
-              <li>Slug: {{ item.slug }}</li>
-              <li>Type: {{ item.type }}</li>
-              <li>Id: {{ item.id }}</li>
-              <li><img src="{{ item.img }}" alt="Image"></li>
-              <li>--------------</li>
+              <div>
+                <img src="{{ item.img }}" alt="Image">
+              </div>
+              <br>
+              <div>{{ item.slug }}</div>
+              <br>
             {% endfor %}
-          </ul>
+          </div>
+          
     </section>
 </main>
 
