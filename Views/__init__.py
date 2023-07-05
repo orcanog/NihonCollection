@@ -3,3 +3,4 @@ from .accueil import *
 from .favori import *
 from .connexion import *
 from .recherche import *
+from .creation import *

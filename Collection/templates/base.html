@@ -1,14 +1,53 @@
-<!-- templates/base.html -->
 <!DOCTYPE html>
-<html>
+<html lang="fr">
 <head>
-  <meta charset="utf-8">
-  <title>{% block title %}Django Auth Tutorial{% endblock %}</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    {% load static %}
+    <link rel="stylesheet" type="text/css" href="{% static 'css/accueil.css' %}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
 </head>
 <body>
-  <main>
-    {% block content %}
-    {% endblock %}
-  </main>
+<header>
+    <nav>
+        <ul class="menu">
+            <!--<li><img src="{% static 'image/logo.png' %}"/>-->
+            </li>
+            <li><a href="#">Actualités</a></li>
+            <li><a href="#">Personnages</a></li>
+            <li><a href="#">Anime</a></li>
+        </ul>
+        <div class="search-bar">
+            <input type="text" placeholder="Rechercher...">
+            <button type="submit">Rechercher</button>
+        </div>
+        <div class="profile" id="profile">
+            <img src=logo_noir_blanc.png alt="Photo de profil">
+            {% if user.is_authenticated %}
+            {{ user.username }}
+            {% else %}
+            <p>Vous n'êtes pas connecté</p>
+            {% endif %}
+        </div>
+        <div class="profile-menu" id="profileMenu">
+            <ul>
+                {% if user.is_authenticated %}
+                <li><a href="{% url 'logout' %}">Déconnexion</a></li>
+                {% else %}
+                <li><a href="{% url 'login' %}">Connexion</a></li>
+                <li><a href="{% url 'creation'%}">S'enregistrer</a></li>
+                {% endif %}
+                <li><a href="#">Favoris</a></li>
+                <li><a href="#">Paramètres</a></li>
+                <li><a href="#">Informations du profil</a></li>
+            </ul>
+        </div>
+    </nav>
+</header>
+
+<body>
+  <script src="{% static 'js/accueil.js' %}"></script>
+  {% block content %}
+  {% endblock %}
 </body>
 </html>
