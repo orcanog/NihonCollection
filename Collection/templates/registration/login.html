@@ -8,6 +8,7 @@
 </head>
 <h2>Connexion à votre compte</h2>
 <form method="post">
+  <!--protéger contre les attaques CSRF en vérifiant l'authenticité des requêtes soumises-->
   {% csrf_token %}
   {{ form.as_p }}
   <button type="submit">Connexion</button>
