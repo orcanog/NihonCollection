@@ -4,7 +4,7 @@
 #### version 1.0 le 24/05/2023
 
 #### Logo "couleur" au format SVG ou au format PNG sur fond transparent  
-<img src="/Collection/static/image/logo.png" alt= “Logo” width="250" height="200">
+<img src="/Gestion/image/logo.png" alt= “Logo” width="250" height="200">
 
 #### Logo "noir" au format SVG ou au format PNG sur fond transparent  
 <img src="/Collection/static/image/image_transparente_noir.png" alt= “Logo” width="250" height="200">
