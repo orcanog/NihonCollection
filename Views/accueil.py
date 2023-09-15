@@ -21,7 +21,7 @@ def extract_info_anime(json_data):
 
 
 def MyView(request):
-    api_url = "https://kitsu.io/api/edge/anime?page[limit]=5&page[offset]=0"
+    api_url = "https://kitsu.io/api/edge/anime?page[limit]=20&page[offset]=0"
 
     response = requests.get(api_url)
 

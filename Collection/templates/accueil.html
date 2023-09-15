@@ -12,12 +12,10 @@
         <h3>Données de l'API</h3>
         <div class="image-container">
             {% for item in extracted_data %}
-              <div>
-                <img src="{{ item.img }}" alt="Image">
+              <div id="anime-container">
+                <img id="anime-image" src="{{ item.img }}" alt="Image">
+                <p id="anime-slug">{{ item.slug }}</p>
               </div>
-              <br>
-              <div>{{ item.slug }}</div>
-              <br>
             {% endfor %}
           </div>
           
