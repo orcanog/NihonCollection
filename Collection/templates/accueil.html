@@ -13,8 +13,8 @@
         <div class="image-container">
             {% for item in extracted_data %}
               <div id="anime-container">
+                <h3 id="anime-title">{{ item.title }}</h3>
                 <img id="anime-image" src="{{ item.img }}" alt="Image">
-                <p id="anime-slug">{{ item.slug }}</p>
               </div>
             {% endfor %}
           </div>

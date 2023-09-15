@@ -5,13 +5,13 @@ def extract_info_anime(json_data):
     extracted_data = []
     if 'data' in json_data and len(json_data['data']) > 0:
         for anime_data in json_data['data']:
-            slug = anime_data['attributes']['slug']
+            title = anime_data['attributes']['titles']['en_jp']
             anime_type = anime_data['type']
             id = anime_data['id']
-            img = anime_data['attributes']['posterImage']['tiny']
+            img = anime_data['attributes']['posterImage']['small']
 
             extracted_data.append({
-                'slug': slug,
+                'title': title,
                 'type': anime_type,
                 'id': id,
                 'img': img

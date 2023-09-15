@@ -1,17 +1,20 @@
+<head>
+  <title>Se connecter</title>
+  <link rel="stylesheet" type="text/css" href="login.css">
+  </head>
 {% extends 'base.html' %}
 
 {% block title %}Se connecter{% endblock %}
 
 {% block content %}
-<head>
-<title>Se connecter</title>
-</head>
-<h2>Connexion à votre compte</h2>
-<form method="post">
-  <!--protéger contre les attaques CSRF en vérifiant l'authenticité des requêtes soumises-->
-  {% csrf_token %}
-  {{ form.as_p }}
-  <button type="submit">Connexion</button>
-</form>
-<p><a href="{% url 'password_reset' %}">Mot de passe oublié</a></p>
+<div id="login">
+  <h2>Connexion à votre compte</h2>
+  <form method="post">
+    <!--protéger contre les attaques CSRF en vérifiant l'authenticité des requêtes soumises-->
+    {% csrf_token %}
+    {{ form.as_p }}
+    <button type="submit">Connexion</button>
+  </form>
+  <p><a href="{% url 'password_reset' %}">Mot de passe oublié</a></p>
+</div>
 {% endblock %}

@@ -167,9 +167,10 @@ main {
     border-radius: 10px;
     transition: transform 0.3s ease;
     border: 2px solid transparent;
+    margin-bottom: 1.5rem;
   }
   
-  .image-container img:hover {
+  #anime-image:hover {
     transform: scale(1.1);
     border-color: #000;
   }
@@ -178,18 +179,58 @@ main {
     display: flex;
     flex-direction: column;
     align-items: center;
+    border-bottom: 2px solid rgba(0, 0, 0, 0.267);
   }
 
-  #anime-slug {
-    padding-top: 0.5rem;
-    padding-bottom: 0.5rem;
+  #anime-title {
+    text-transform: capitalize;
   }
 
   .api-data {
-    padding-left: 10rem!important;
-    padding-right: 10rem!important;
+    padding-left: 10rem;
+    padding-right: 10rem;
   }
 
+
+@media screen and (min-width: 768px) and (max-width: 1280px) {
+  .image-container {
+    display: grid;
+    grid-template-columns: repeat(3,minmax(1rem,1fr));
+    row-gap: 0.5rem;
+    
+  }
+  
+  #anime-image {
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+    border: 2px solid transparent;
+  }
+  
+  #anime-image:hover {
+    transform: scale(1.1);
+    border-color: #000;
+  }
+  
+  #anime-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    white-space: nowrap;
+    border-bottom: 2px solid black;
+  }
+
+  
+  #anime-title {
+    max-width: 150px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+  
+  .api-data {
+    padding: 0
+  } 
+}
  
 @media screen and (max-width: 768px) {
     
@@ -271,5 +312,44 @@ main {
   .show {
     display: block !important;
 }
+
+.image-container {
+  display: grid;
+  grid-template-columns: repeat(2,minmax(1rem,1fr));
+  row-gap: 0.5rem;
+  
+}
+
+#anime-image {
+  border-radius: 10px;
+  transition: transform 0.3s ease;
+  border: 2px solid transparent;
+}
+
+#anime-image:hover {
+  transform: scale(1.1);
+  border-color: #000;
+}
+
+#anime-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  white-space: nowrap;
+  border-bottom: 2px solid black;
+}
+
+#anime-title {
+  max-width: 150px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.api-data {
+  padding: 0
+}
+
+
 }
   
