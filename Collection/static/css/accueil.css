@@ -6,6 +6,32 @@ body {
     padding: 0;
 }
 
+
+.logo{
+
+    font-size: 36px;
+    color: #e6e6e6;
+    font-weight: 600;
+    text-decoration: none;
+    text-align: center;
+}
+
+.logo .first-line,
+.logo .second-line {
+    display: block;
+    font-family: "Comic Sans MS";
+    font-size: 26px
+
+}
+
+.first-line img {
+    width: 50px;
+
+}
+span{
+    color: #f799c4;
+}
+
 header {
     background-color: #f1398e;
     padding: 20px;
@@ -18,6 +44,7 @@ nav {
     align-items: center;
     margin-bottom: 20px;
 }
+
 
 .menu {
     list-style: none;
@@ -149,8 +176,9 @@ main {
 }
 
 .logo-img {
-    width: 100px;
-    height: 100px;
+    width: 5px;
+    width: 5px;
+    height: 50px;
     border-radius: 50%;
     background-size: 80%;
 }

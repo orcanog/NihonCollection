@@ -6,17 +6,19 @@
     {% load static %}
     <link rel="stylesheet" type="text/css" href="{% static 'css/accueil.css' %}">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" type="text/css" href="{% static 'css/login.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'css/signup.css' %}">
 </head>
 <body>
 <header>
     <nav>
-        <ul class="menu">
-            <!--<li><img src="{% static 'image/logo.png' %}"/>-->
-            </li>
-            <li><a href="#">Actualités</a></li>
-            <li><a href="#">Personnages</a></li>
-            <li><a href="#">Anime</a></li>
-        </ul>
+        <header class="header">
+            <a href="{% url 'accueil' %}" class="logo">
+                <span class="first-line">Nihon <img src="data:image/png;base64,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"></span>
+
+    <span class="second-line">Collection</span></a>
+
+        </header>
         <div class="search-bar">
             <input type="text" placeholder="Rechercher...">
             <button type="submit">Rechercher</button>

@@ -1,20 +1,32 @@
-<head>
-  <title>Se connecter</title>
-  <link rel="stylesheet" type="text/css" href="login.css">
-  </head>
 {% extends 'base.html' %}
 
 {% block title %}Se connecter{% endblock %}
 
 {% block content %}
-<div id="login">
-  <h2>Connexion à votre compte</h2>
-  <form method="post">
-    <!--protéger contre les attaques CSRF en vérifiant l'authenticité des requêtes soumises-->
-    {% csrf_token %}
-    {{ form.as_p }}
-    <button type="submit">Connexion</button>
-  </form>
-  <p><a href="{% url 'password_reset' %}">Mot de passe oublié</a></p>
-</div>
+<body1>
+ <form method="post">
+
+ <div class="wrapper">
+   <form action="">
+     <h1>Se Connecter</h1>
+     <div class="input-box">
+         {{ form.as_p }}
+         {% csrf_token %}
+     </div>
+
+
+
+     <div class="remember-forgot">
+       <label><input type="checkbox">Remeber me </label>
+       <a href="#">Forgot password?</a>
+     </div>
+     <button type="submit" class="btn">Connexion</button>
+
+     <div class="register-link">
+       <p>don't have an account <a href="{% url 'password_reset' %}">Register</a></p>
+     </div>
+   </form>
+ </div>
+</form>
+</body1>
 {% endblock %}

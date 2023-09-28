@@ -4,12 +4,17 @@
 
 {% block content %}
 <head>
-  <title>Création de compte</title>
   </head>
+   <body1>
+   <form method="post">
+    <div class="wrapper2">
   <h2>Créer votre compte</h2>
-  <form method="post">
-    {% csrf_token %}
-    {{ form.as_p }}
+  <div class="input-box">
+         {{ form.as_p }}
+         {% csrf_token %}
+     </div>
     <button type="submit">S'enregistrer</button>
-  </form>
+    </div>
+   </form>
+  </body1>
 {% endblock %}
