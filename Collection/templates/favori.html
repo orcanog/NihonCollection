@@ -1,0 +1,45 @@
+{% extends "base.html" %}
+
+{% block content %}
+<main>
+    <h2>Page favoris</h2>
+    <!-- {% for anime in user_favorites %}
+    <div id="anime-container">
+        <h3 id="anime-title">{{ anime.title }}</h3>
+        <img id="anime-image" src="{{ anime.image_url }}" alt="Image">
+        <button class="bouton-favori" data-anime-id="{{ anime.anime_id }}">Ajouter au favoris</button>
+    </div>
+    {% empty %}
+    <p>Vous n'avez pas encore ajoute d'anime a vos favoris</p>
+    {% endfor %} -->
+    {% if user.is_authenticated %}
+    <ul>
+        {% if user_favorites %}
+            {% for anime in user_favorites %}
+                <li class="listeAnime">
+                    <h2>{{ anime.0 }}</h2>
+                    <a href="{{ anime.4 }}"  target="_blank"><img src="{{ anime.1 }}" alt="{{ anime.0 }}"></a>
+                    <form>
+                        {% csrf_token %}
+                        {% if anime.3 == True %}
+                            <button class="remove-favoris-button" data-anime-id="{{ anime.2 }}">Supprimer des favoris</button>
+                        {% endif %}
+                        {% if anime.3 != True %}
+                            <button class="favoris-button" data-anime-id="{{ anime.2 }}">Favoris</button>
+                        {% endif %}
+                    </form>
+                </li>
+            {% endfor %}
+        {% else %}
+            <li>Vous n'avez aucun anime en favoris.</li>
+        {% endif %}
+    </ul>
+    {% else %}
+        {% if error_message %}
+            <p>{{ error_message }}</p>
+            <a href="/signin" class="btn btn-primary"><span class="glyphicon glyphicon-log-in"></span>Login</a> 
+            <a href="/signup" class="btn btn-success">Signup</a>
+        {% endif %}
+   {% endif %}
+</main>
+{% endblock %}

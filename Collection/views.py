@@ -1,5 +1,6 @@
 from django.shortcuts import render
 
+
 # Create your views here.
 
 def accueil(request):
@@ -13,3 +14,5 @@ def favori(request):
 
 def recherche(request):
     return render(request, 'Collection/templates/recherche.html')
+
+

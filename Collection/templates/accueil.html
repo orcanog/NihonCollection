@@ -15,10 +15,22 @@
               <div id="anime-container">
                 <h3 id="anime-title">{{ item.title }}</h3>
                 <img id="anime-image" src="{{ item.img }}" alt="Image">
+                <form>
+                  {% csrf_token %}
+                  {% if item.existe_deja == True %}
+                  <button class="remove-favoris-button" data-anime-id="{{ item.id }}">Supprimer des favoris</button>
+                  {% endif %}
+                  {% if item.existe_deja != True %}
+                  <button class="favoris-button" data-anime-id="{{ item.id }}">Ajouter aux favoris</button>
+                  {% endif %}
+              </form>
               </div>
             {% endfor %}
           </div>
           
     </section>
 </main>
+
+
+  
 {% endblock %}
