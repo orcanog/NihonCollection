@@ -20,10 +20,12 @@
     <span class="second-line">Collection</span></a>
 
         </header>
-        <div class="search-bar">
-            <input type="text" placeholder="Rechercher...">
+        
+        <form id="search-form">
+            <input id="search-input" type="text" name="query" placeholder="Rechercher">
             <button type="submit">Rechercher</button>
-        </div>
+          </form>
+
         <div class="profile" id="profile">
             <img src="static/image/logo_noir_blanc.png" alt="Photo de profil">
             {% if user.is_authenticated %}
@@ -48,7 +50,6 @@
     </nav>
 </header>
 
-<script src="{% static 'js/accueil.js' %}"></script>
 <script src="{% static 'js/main.js' %}"></script>
 
   {% block content %}

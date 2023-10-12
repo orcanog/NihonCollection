@@ -7,14 +7,13 @@
 <main>
     <h2>Bienvenue dans le monde des anime et manga</h2>
     <p class="description">Découvrez les dernières actualités, les meilleures séries, et plus encore !</p>
-    <a href="#" class="cta-button">Commencer</a>
     <section class="api-data">
-        <h3>Données de l'API</h3>
         <div class="image-container">
             {% for item in extracted_data %}
               <div id="anime-container">
-                <h3 id="anime-title">{{ item.title }}</h3>
-                <img id="anime-image" src="{{ item.img }}" alt="Image">
+                <a class="anime-link" href="{% url 'resultat' item.id %}">
+                <h3 class="anime-title">{{ item.title }}</h3>
+                <img class="anime-image" src="{{ item.img }}" alt="Image">
                 <form>
                   {% csrf_token %}
                   {% if item.existe_deja == True %}
@@ -27,10 +26,15 @@
               </div>
             {% endfor %}
           </div>
+
+          <div class="result-container hidden">
+          </div>
           
     </section>
 </main>
 
-
-  
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/paginationjs/2.1.5/pagination.min.js"></script>
+{%load static%}
+<script src="{% static 'js/accueil.js' %}"></script>
 {% endblock %}

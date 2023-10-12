@@ -190,7 +190,32 @@ main {
     row-gap: 0.5rem;
   }
   
-  #anime-image {
+  .result-container {
+    display: grid;
+    grid-template-columns: repeat(4,minmax(1rem,1fr));
+    row-gap: 0.5rem;
+  }
+
+  .anime-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-bottom: 2px solid rgba(0, 0, 0, 0.267);;
+  }
+
+  .anime-link {
+    text-decoration: none;
+    color: inherit;
+  }
+
+  .anime-title {
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    max-width: 90%;
+  }
+
+  .anime-image {
     width: 50%;
     border-radius: 10px;
     transition: transform 0.3s ease;
@@ -198,20 +223,14 @@ main {
     margin-bottom: 1.5rem;
   }
   
-  #anime-image:hover {
+  .anime-image:hover {
     transform: scale(1.1);
     border-color: #000;
   }
 
-  #anime-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    border-bottom: 2px solid rgba(0, 0, 0, 0.267);
-  }
 
-  #anime-title {
-    text-transform: capitalize;
+  .hidden {
+    display: none;
   }
 
   .api-data {
