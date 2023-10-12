@@ -4,4 +4,4 @@ from .favorites import *
 from .connexion import *
 from .recherche import *
 from .creation import *
-from .resultat import *
+from .detail import *
