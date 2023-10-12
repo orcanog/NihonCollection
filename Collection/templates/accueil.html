@@ -11,7 +11,7 @@
         <div class="image-container">
             {% for item in extracted_data %}
               <div id="anime-container">
-                <a class="anime-link" href="{% url 'resultat' item.id %}">
+                <a class="anime-link" href="{% url 'detail' item.id %}">
                 <h3 class="anime-title">{{ item.title }}</h3>
                 <img class="anime-image" src="{{ item.img }}" alt="Image">
                 <form>

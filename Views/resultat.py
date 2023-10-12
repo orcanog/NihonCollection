@@ -35,4 +35,4 @@ def anime_detail(request, anime_id):
             'anime_description': anime_description,
         }
 
-    return render(request, 'resultat.html', context)
+    return render(request, 'detail.html', context)

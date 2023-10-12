@@ -29,5 +29,5 @@ urlpatterns = [
     path('accounts/', include("django.contrib.auth.urls")),
     path('ajouter_aux_favoris/', favorites.ajouter_aux_favoris, name='addFavoris'),
     path('supprimer_des_favoris/', favorites.supprimer_des_favoris, name='supprimer_des_favoris'),
-    path('anime/<int:anime_id>/', anime_detail, name="resultat"),
+    path('anime/<int:anime_id>/', anime_detail, name="detail"),
 ]
