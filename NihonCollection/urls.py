@@ -16,7 +16,7 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path, include
-from Views import ConnexionView, RechercheView, MyView, SignUpView, favorites, anime_detail
+from Views import ConnexionView, MyView, SignUpView, favorites, anime_detail, search
 
 
 urlpatterns = [
@@ -24,10 +24,10 @@ urlpatterns = [
     path('', MyView, name="accueil"),
     path('connexion/', ConnexionView.as_view(), name="connexion"),
     path('favori/', favorites.animeFavoris, name="favori"),
-    path('recherche/', RechercheView.as_view(), name="recherche"),
     path('creation/', SignUpView.as_view(), name="creation"),
     path('accounts/', include("django.contrib.auth.urls")),
     path('ajouter_aux_favoris/', favorites.ajouter_aux_favoris, name='addFavoris'),
     path('supprimer_des_favoris/', favorites.supprimer_des_favoris, name='supprimer_des_favoris'),
     path('anime/<int:anime_id>/', anime_detail, name="detail"),
+    path('recherche/', search, name='recherche')
 ]

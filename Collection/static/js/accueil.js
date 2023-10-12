@@ -22,7 +22,7 @@ document.addEventListener('click', function() {
     searchInput.focus();
 });**/
 
-// Fonction déclenchée à chaque saisie dans la barre de recherche
+//Fonction déclenchée à chaque saisie dans la barre de recherche
 searchBar.addEventListener("input", (event) => {
     // Récupération de la valeur saisie dans la barre de recherche
     const query = event.target.value; 
