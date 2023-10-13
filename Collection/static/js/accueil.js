@@ -55,7 +55,7 @@ searchBar.addEventListener("input", (event) => {
   
             const animeTitle = document.createElement("h3");
             animeTitle.classList.add("anime-title");
-            animeTitle.textContent = item.attributes.titles.en || item.attributes.titles.en_jp || item.attributes.titles.ja_jp || "No title";
+            animeTitle.textContent = item.attributes.titles.en_jp || item.attributes.titles.ja_jp || "No title";
   
             const animeImage = document.createElement("img");
             animeImage.classList.add("anime-image");

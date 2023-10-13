@@ -11,9 +11,10 @@
         <div class="image-container">
             {% for item in extracted_data %}
               <div id="anime-container">
-                <a class="anime-link" href="{% url 'detail' item.id %}">
                 <h3 class="anime-title">{{ item.title }}</h3>
+                <a class="anime-link" href="{% url 'detail' item.id %}">
                 <img class="anime-image" src="{{ item.img }}" alt="Image">
+                </a>
                 <form>
                   {% csrf_token %}
                   {% if item.existe_deja == True %}
