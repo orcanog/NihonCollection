@@ -25,7 +25,7 @@ def anime_detail(request, anime_id):
         }
     else:
         # Récupère les informations de l'anime à partir des données renvoyées par l'API
-        anime_title = anime_data["attributes"]["titles"]["en"] or anime_data["attributes"]["titles"]["en_jp"] or anime_data["attributes"]["titles"]["ja_jp"]
+        anime_title = anime_data["attributes"]["titles"]["en_jp"] or anime_data["attributes"]["titles"]["ja_jp"]
         anime_image_url = anime_data["attributes"]["posterImage"]["large"]
         anime_description = anime_data["attributes"]["description"]
 
