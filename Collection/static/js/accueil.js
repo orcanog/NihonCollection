@@ -1,5 +1,3 @@
-const profileMenu = document.getElementById('profileMenu');
-const profile = document.getElementById('profile');
 const searchContainer = document.querySelector('.search-container');
 const searchIcon = document.getElementById('search-git icon');
 const searchInput = document.getElementById('search-input');
@@ -7,15 +5,6 @@ const searchBar = document.querySelector('#search-form');
 const animeAPI = document.querySelector(".image-container");
 const animeResult = document.querySelector(".result-container");
 let timerId;
-
-profile.addEventListener('click', function(event) {
-    event.stopPropagation();
-    profileMenu.classList.toggle('show');
-});
-
-document.addEventListener('click', function() {
-    profileMenu.classList.remove('show');
-});
 
 /**searchIcon.addEventListener('click', () => {
     searchContainer.classList.toggle('active');

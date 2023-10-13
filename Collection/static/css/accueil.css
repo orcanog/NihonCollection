@@ -372,14 +372,14 @@ main {
 
 .image-container {
   display: grid;
-  grid-template-columns: repeat(2,minmax(1rem,1fr));
+  grid-template-columns: minmax(1rem,1fr);
   row-gap: 0.5rem;
   
 }
 
 .result-container {
   display: grid;
-  grid-template-columns: repeat(2,minmax(1rem,1fr));
+  grid-template-columns: minmax(1rem,1fr);
   row-gap: 0.5rem;
   
 }
