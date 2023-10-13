@@ -9,3 +9,9 @@
     border-radius: 13px;
     padding: 30px 40px;
 }
+
+@media screen and (max-width: 768px) {
+    .wrapper2{
+        width: auto;
+    }
+}
