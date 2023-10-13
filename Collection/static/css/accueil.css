@@ -247,27 +247,33 @@ main {
     
   }
   
-  #anime-image {
+  .result-container {
+    display: grid;
+    grid-template-columns: repeat(3,minmax(1rem,1fr));
+    row-gap: 0.5rem;
+    
+  }
+  
+  .anime-image {
     border-radius: 10px;
     transition: transform 0.3s ease;
     border: 2px solid transparent;
   }
   
-  #anime-image:hover {
+  .anime-image:hover {
     transform: scale(1.1);
     border-color: #000;
   }
   
-  #anime-container {
+  .anime-container {
     display: flex;
     flex-direction: column;
     align-items: center;
     white-space: nowrap;
     border-bottom: 2px solid black;
   }
-
   
-  #anime-title {
+  .anime-title {
     max-width: 150px;
     overflow: hidden;
     text-overflow: ellipsis;
@@ -276,7 +282,11 @@ main {
   
   .api-data {
     padding: 0
-  } 
+  }
+
+  .hidden {
+    display: none;
+  }
 }
  
 @media screen and (max-width: 768px) {
@@ -367,18 +377,25 @@ main {
   
 }
 
-#anime-image {
+.result-container {
+  display: grid;
+  grid-template-columns: repeat(2,minmax(1rem,1fr));
+  row-gap: 0.5rem;
+  
+}
+
+.anime-image {
   border-radius: 10px;
   transition: transform 0.3s ease;
   border: 2px solid transparent;
 }
 
-#anime-image:hover {
+.anime-image:hover {
   transform: scale(1.1);
   border-color: #000;
 }
 
-#anime-container {
+.anime-container {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -386,8 +403,7 @@ main {
   border-bottom: 2px solid black;
 }
 
-#anime-title {
-  max-width: 150px;
+.anime-title {
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
@@ -397,5 +413,9 @@ main {
   padding: 0
 }
 
+.hidden {
+  display: none;
+
+}
 }
   

@@ -1,5 +1,3 @@
-const profileMenu = document.getElementById('profileMenu');
-const profile = document.getElementById('profile');
 const searchContainer = document.querySelector('.search-container');
 const searchIcon = document.getElementById('search-git icon');
 const searchInput = document.getElementById('search-input');
