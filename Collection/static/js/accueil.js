@@ -59,9 +59,15 @@ searchBar.addEventListener("input", (event) => {
             animeImage.classList.add("anime-image");
             animeImage.src = item.attributes.posterImage.small;
             animeImage.alt = "Image";
+
+            const animeLink = document.createElement("a");
+            animeLinkContent = item.id;
+            animeLink.href = `/anime/${animeLinkContent}`;
   
+            
             animeContainer.appendChild(animeTitle);
-            animeContainer.appendChild(animeImage);
+            animeLink.appendChild(animeImage);
+            animeContainer.appendChild(animeLink);
             animeResult.appendChild(animeContainer);
           });
   
