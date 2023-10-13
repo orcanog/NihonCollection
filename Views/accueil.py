@@ -20,7 +20,6 @@ def extract_info_anime(json_data, request):
                 'img': img,
                 'existe_deja': existe_deja
             })
-
             animeDb = AnimeInfos(id_anime=id,titre=title,image=img).save()
 
     return extracted_data

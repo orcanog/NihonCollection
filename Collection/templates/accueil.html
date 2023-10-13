@@ -15,6 +15,7 @@
                 <a class="anime-link" href="{% url 'detail' item.id %}">
                 <img class="anime-image" src="{{ item.img }}" alt="Image">
                 </a>
+                {% if user.is_authenticated %}
                 <form>
                   {% csrf_token %}
                   {% if item.existe_deja == True %}
@@ -24,6 +25,7 @@
                   <button class="favoris-button" data-anime-id="{{ item.id }}">Ajouter aux favoris</button>
                   {% endif %}
               </form>
+              {% endif %}
               </div>
             {% endfor %}
           </div>

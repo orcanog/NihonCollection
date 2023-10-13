@@ -212,7 +212,6 @@ main {
     text-overflow: ellipsis;
     overflow: hidden;
     white-space: nowrap;
-    max-width: 90%;
   }
 
   .anime-image {
